@@ -1,6 +1,6 @@
 import './App.css';
-import Navbar from './Navbar';
-import Shop from './Shop';
+import Navbar from './Components/Navbar';
+import Shop from './Components/Shop';
 
 function App() {
   return (
