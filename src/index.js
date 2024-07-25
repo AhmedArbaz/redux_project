@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import store from "./state/store.js"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}> 
+      {/* ya ham nay app ko pura store dana chaty hain to day rahay hain */}
     <App />
+    </Provider>
   </React.StrictMode>
 );
 
